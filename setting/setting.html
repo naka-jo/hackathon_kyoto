@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="setting.css">
+        <title>モーニングルーティーン設定</title>
+    </head>
+    <body>
+        <h1>朝の行動を設定しよう！</h1>
+
+        <div class="main">
+            <div class="time_setting">
+                <h3>アラームを設定</h3>
+                <p>起床時間</p>
+                <p><input type="time" name="input_getup"></p>
+                <p>出発時間</p>
+                <p><input type="time" name="input_leavinghome"></p>
+            </div>
+
+            <div class="belong">
+                <h3>持ち物リストを編集</h3>
+                <input type="text" name="input_belong">
+                <ol>
+                    <li>
+
+                        <button type="submit" name="delete_bling">削除</button>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="todo">
+                <h3>朝のtodoリストを編集</h3>
+                <input type="text" name="input_todo">
+                <ol>
+                    <li>
+
+                        <button type="submit" name="delete_todo">削除</button>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="traffic">
+                <h3>交通機関を設定</h3>
+                <p>現在の交通機関</p>
+                <p>鉄道会社名
+                    <input type="text" name="input_company" list="companylist">
+                    <datalist>
+                        <option value="横浜市交通局">
+                    </datalist>
+                </p>
+                <p>路線名
+                    <input type="text" name="inputline" list="linelist">
+                    <datalist>
+                        <option value="">
+                    </datalist>
+                </p>
+                <ol>
+                    <li>
+
+                        <button type="submit" name="delete_todo">削除</button>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="update_block">
+            <button type="submit" name="update">更新</button>
+            <h4>最終更新: 00:00</h4>
+        </div>
+    </body>
+</html>
