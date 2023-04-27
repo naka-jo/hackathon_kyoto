@@ -7,7 +7,10 @@
         <title>モーニングルーティーン設定</title>
     </head>
     <body>
-        <h1>朝の行動を設定しよう！</h1>
+        <div class="top_box"></div>
+        <button class="back" type="submit" name="back" >Home</button>
+        <h1>設定画面</h1>
+        <h2>朝の行動を設定しよう！</h2>
 
         <div class="main">
             <div class="time_setting">
@@ -42,19 +45,32 @@
 
             <div class="traffic">
                 <h3>交通機関を設定</h3>
-                <p>現在の交通機関</p>
-                <p>鉄道会社名
-                    <input type="text" name="input_company" list="companylist">
-                    <datalist>
-                        <option value="横浜市交通局">
-                    </datalist>
-                </p>
                 <p>路線名
                     <input type="text" name="inputline" list="linelist">
-                    <datalist>
-                        <option value="">
+                    <datalist id="linelist">
+                        <option value="東京メトロ丸の内線">
+                        <option value="東京メトロ銀座線">
+                        <option value="東京メトロ千代田線">
+                        <option value="東京メトロ東西線">
+                        <option value="東京メトロ南北線">
+                        <option value="東京メトロ日比谷線">
+                        <option value="東京メトロ半蔵門線">
+                        <option value="東京メトロ副都心線">
+                        <option value="東京メトロ有楽町線">
+                        <option value="都営三田線">
+                        <option value="都営新宿線">
+                        <option value="都営浅草線">
+                        <option value="都営大江戸線">
+                        <option value="都電荒川線">
+                        <option value="日暮里・舎人ライナー">
+                        <option value="横浜市営地下鉄グリーンライン">
+                        <option value="横浜市営地下鉄ブルーライン">
+                        <option value="東京臨海高速鉄道りんかい線">
+                        <option value="つくばエクスプレス">
+                        <option value="多摩モノレール">
                     </datalist>
                 </p>
+                <p>登録済みの交通機関</p>
                 <ol>
                     <li>
 
@@ -62,11 +78,30 @@
                     </li>
                 </ol>
             </div>
-        </div>
-        
-        <div class="update_block">
-            <button type="submit" name="update">更新</button>
-            <h4>最終更新: 00:00</h4>
+            <div class="voice">
+                <h3>音声を選択</h3>
+                <input type="text" name="inputline" list="voicelist">
+                <datalist id="voicelist">
+                    <option value="四国めたん">
+                    <option value="ずんだもん">
+                    <option value="春日部つむぎ">
+                    <option value="波音リツ">
+                    <option value="雨晴はう">
+                    <option value="玄野武宏">
+                    <option value="白上虎太郎">
+                    <option value="青山龍星">
+                    <option value="冥鳴ひまり">
+                    <option value="九州そら">
+                    <option value="もち子さん">
+                    <option value="剣崎雌雄">
+                    <option value="WhiteCUL">
+                    <option value="後鬼">
+                    <option value="No.7">
+                    <option value="ちび式じい">
+                    <option value="櫻歌ミコ">
+                    <option value="小夜/SAYO">
+                    <option value="ナースロボ＿タイプＴ">
+            </div>
         </div>
     </body>
 </html>
