@@ -12,18 +12,26 @@
         <h1>設定画面</h1>
         <h2>朝の行動を設定しよう！</h2>
 
-        <div class="main">
+        <div class="main_upper">
             <div class="time_setting">
                 <h3>アラームを設定</h3>
-                <p>起床時間</p>
-                <p><input type="time" name="input_getup"></p>
-                <p>出発時間</p>
-                <p><input type="time" name="input_leavinghome"></p>
+                <p>起床時間: 出発時間:</p>
+                <p>起床時間を入力</p>
+                <p>
+                    <input type="time" name="input_getup">
+                    <button type="submit" name="update_getup">更新</button>
+                </p>
+                <p>出発時間を入力</p>
+                <p>
+                    <input type="time" name="input_leavinghome">
+                    <button type="submit" name="update_leavinghome">更新</button>
+                </p>
             </div>
 
             <div class="belong">
                 <h3>持ち物リストを編集</h3>
                 <input type="text" name="input_belong">
+                <button type="submit" name="update_belong">更新</button>
                 <ol>
                     <li>
 
@@ -34,19 +42,38 @@
 
             <div class="todo">
                 <h3>朝のtodoリストを編集</h3>
-                <input type="text" name="input_todo">
+                <p>
+                    タスク
+                    <input type="text" name="input_todo">
+                </p>
+                <p>
+                    時間
+                    <input type="time" name="input_todotime">
+                    <button type="submit" name="update_todo">更新</button>
+                </p>
                 <ol>
                     <li>
-
+                        起床
+                    </li>
+                    <li>
+                        持ち物確認
+                    </li>
+                    <li>
+                        出発
+                    </li>
+                    <li>
+                        
                         <button type="submit" name="delete_todo">削除</button>
                     </li>
                 </ol>
             </div>
-
+        </div>
+        <div class="main_lower">
             <div class="traffic">
                 <h3>交通機関を設定</h3>
                 <p>路線名
                     <input type="text" name="inputline" list="linelist">
+                    <button type="submit" name="update_traffic">更新</button>
                     <datalist id="linelist">
                         <option value="東京メトロ丸の内線">
                         <option value="東京メトロ銀座線">
@@ -79,8 +106,48 @@
                 </ol>
             </div>
             <div class="voice">
-                <h3>音声を選択</h3>
+                <h3>ガイド音声を選択</h3>
+                <p>四国めたん</p>
+                <audio controls src="./voice_test/四国めたん_test.wav"></audio>
+                <p>ずんだもん</p>
+                <audio controls src="./voice_test/ずんだもん_test.wav"></audio>
+                <p>春日部つむぎ</p>
+                <audio controls src="./voice_test/春日部つむぎ_test.wav"></audio>
+                <p>波音リツ</p>
+                <audio controls src="./voice_test/波音リツ_test.wav"></audio>
+                <p>雨晴はう</p>
+                <audio controls src="./voice_test/雨晴はう_test.wav"></audio>
+                <p>玄野武宏</p>
+                <audio controls src="./voice_test/玄野武宏_test.wav"></audio>
+                <p>白上虎太郎</p>
+                <audio controls src="./voice_test/白上虎太郎_test.wav"></audio>
+                <p>青山龍星</p>
+                <audio controls src="./voice_test/青山龍星_test.wav"></audio>
+                <p>冥鳴ひまり</p>
+                <audio controls src="./voice_test/冥鳴ひまり_test.wav"></audio>
+                <p>九州そら</p>
+                <audio controls src="./voice_test/九州そら_test.wav"></audio>
+                <p>もち子さん</p>
+                <audio controls src="./voice_test/もち子さん_test.wav"></audio>
+                <p>剣崎雌雄</p>
+                <audio controls src="./voice_test/剣崎雌雄_test.wav"></audio>
+                <p>WhiteCUL</p>
+                <audio controls src="./voice_test/WhiteCUL_test.wav"></audio>
+                <p>後鬼</p>
+                <audio controls src="./voice_test/後鬼_test.wav"></audio>
+                <p>No.7</p>
+                <audio controls src="./voice_test/No.7_test.wav"></audio>
+                <p>ちび式じい</p>
+                <audio controls src="./voice_test/ちび式じい_test.wav"></audio>
+                <p>櫻歌ミコ</p>
+                <audio controls src="./voice_test/櫻歌ミコ_test.wav"></audio>
+                <p>小夜-SAYO</p>
+                <audio controls src="./voice_test/小夜-SAYO_test.wav"></audio>
+                <p>ナースロボ_タイプT</p>
+                <audio controls src="./voice_test/ナースロボ_タイプT_test.wav"></audio>
+                <p>現在の設定: </p>
                 <input type="text" name="inputline" list="voicelist">
+                <button type="submit" name="update_voice">更新</button>
                 <datalist id="voicelist">
                     <option value="四国めたん">
                     <option value="ずんだもん">
@@ -101,6 +168,25 @@
                     <option value="櫻歌ミコ">
                     <option value="小夜/SAYO">
                     <option value="ナースロボ＿タイプＴ">
+            </div>
+
+            <div class="alarm">
+                <h3>アラーム音を選択</h3>
+                <p>アラーム1: リラックス</p>
+                <audio controls src="./alarm/alarm_1.mp3"></audio>
+                <p>アラーム2: パルス系</p>
+                <audio controls src="./alarm/alarm_2.mp3"></audio>
+                <p>アラーム3: チップ</p>
+                <audio controls src="./alarm/alarm_3.mp3"></audio>
+                <p>アラーム4: アルペジオ</p>
+                <audio controls src="./alarm/alarm_4.mp3"></audio>
+                <input type="text" name="inputline" list="alarmlist">
+                <button type="submit" name="update_voice">更新</button>
+                <datalist id="alarmlist">
+                    <option value="アラーム1">
+                    <option value="アラーム2">
+                    <option value="アラーム3">
+                    <option value="アラーム4">
             </div>
         </div>
     </body>

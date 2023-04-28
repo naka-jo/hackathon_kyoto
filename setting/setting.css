@@ -5,6 +5,8 @@ body{
     font-family: 'Noto Sans JP';
     font-size: 18px;
     margin: 0;
+    background-image: url('./doraxa.png');
+    background-size: 100% auto;
 }
 
 .top_box{
@@ -22,7 +24,6 @@ body{
     margin-bottom: 0%;
     text-align: center;
     font-size: 18px;
-    border: none;
     background: transparent;
     border: solid;
     border-radius: 50%;
@@ -48,31 +49,47 @@ h2{
     text-align: center;
 }
 
-.main{
+.main_upper{
+    margin-top: 3%;
     display: flex;
     text-align: center;
 }
 
+.main_upper input{
+    border: solid;
+    border-color: #ECD610;
+}
+
+.main_upper button{
+    border: solid;
+    background: white;
+    border-color: #ECD610;
+}
+
+.main_upper button:hover{
+    background: #ECD610;
+}
+
+.main_upper button:active{
+    background: #FFF1AB;
+}
+
 .time_setting{
-    margin-top: 3%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 2%;
     border: solid;
     border-color: #0BB0E2;
-    width: 19%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .belong{
-    margin-top: 3%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
     border: solid;
     border-color: #0BB0E2;
-    width: 18%;
-}
-
-.belong button{
-    margin-bottom: 2%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .belong table{
@@ -80,28 +97,67 @@ h2{
 }
 
 .todo{
-    margin-top: 3%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 3%;
     border: solid;
     border-color: #0BB0E2;
-    width: 18%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main_lower{
+    display: flex;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.main_lower input{
+    border: solid;
+    border-color: #ECD610;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.main_lower button{
+    border: solid;
+    background: white;
+    border-color: #ECD610;
+}
+
+.main_lower button:hover{
+    background: #ECD610;
+}
+
+.main_lower button:active{
+    background: #FFF1AB;
 }
 
 .traffic{
     margin-top: 3%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 3%;
+    margin-right: 2%;
     border: solid;
     border-color: #0BB0E2;
-    width: 18%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .voice{
     margin-top: 3%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
     border: solid;
     border-color: #0BB0E2;
-    width: 19%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.alarm{
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 3%;
+    border: solid;
+    border-color: #0BB0E2;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
 }

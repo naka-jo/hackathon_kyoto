@@ -2,13 +2,92 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 body{ 
-    text-align: center;
     font-family: 'Noto Sans JP';
     font-size: 30px;
     margin: 0;
-    
+    background-image: url('./doraxa.png');
+    background-size: 100% auto;
+}
+
+.top_box{
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    top: 0px;
+    background: #0BB0E2;
+}
+
+h1{
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 100px;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.subtitle h2{
+    margin-top: 0%;
+    background: linear-gradient(transparent 70%, #ECD610 10%);
+    display: inline-block;
 }
 
 .main{
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 3%;
     font-size: 50px;
+    border: solid;
+    border-color: #0BB0E2;
+    border-radius: 20px;
+    text-decoration: underline;
+    text-decoration-color:#FFF1AB;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.div_checkbelongings{
+    margin-top: -15.5%;
+}
+
+.check_belongings{
+    position: relative;
+    margin-left: 87%;
+    margin-right: 0.7%;
+    text-align: center;
+    font-weight: bold;
+    background: white;
+    border: solid;
+    border-color: #ECD610;
+
+}
+
+.check_belongings:hover{
+    background: #ECD610;
+}
+
+.check_belongings:active{
+    background: #FFF1AB;
+}
+
+.setting{
+    padding: 30px 26px;
+    margin-left: 87%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background: transparent;
+    border: solid;
+    border-radius: 50%;
+    border-color: #ECD610;
+}
+
+.setting:hover{
+    background: #ECD610;
+}
+
+.setting:active{
+    background: #FFF1AB;
 }
