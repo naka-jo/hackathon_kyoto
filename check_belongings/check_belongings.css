@@ -17,8 +17,8 @@ body{
     background: #0BB0E2;
 }
 
-.setting{
-    padding: 36.5px 5px;
+.viewtask{
+    padding: 23px 5px;
     margin-top: 4%;
     margin-left: 4%;
     margin-bottom: 0%;
@@ -27,15 +27,15 @@ body{
     background: transparent;
     border: solid;
     border-radius: 50%;
-    border-color: #0BB0E2;
+    border-color: #ECD610;
 }
 
-.setting:hover{
-    background: #0BB0E2;
+.viewtask:hover{
+    background: #ECD610;
 }
 
-.setting:active{
-    background:lightcyan;
+.viewtask:active{
+    background:#FFF1AB;
 }
 
 h1{
@@ -51,46 +51,24 @@ h1{
 
 .subtitle h2{
     margin-top: 0%;
-    background: linear-gradient(transparent 70%, #ECD610 10%);
+    background: linear-gradient(transparent 70%, coral 10%);
     display: inline-block;
 }
 
 .main{
-    text-align: center;
     margin-right: 20%;
     margin-left: 20%;
     margin-bottom: 3%;
-    font-size: 50px;
     border: solid;
-    border-color: #0BB0E2;
+    border-color: coral;
     border-radius: 20px;
     text-decoration: underline;
-    text-decoration-color:#FFF1AB;
+    text-decoration-color:lightcoral;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 .main p{
     text-align: left;
+    font-size: 50px;
     margin-left: 20%;
-}
-
-.check_belongings{
-    padding: 33px 8px;
-    margin-left: 80%;
-    margin-bottom: 2%;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    background: transparent;
-    border: solid;
-    border-radius: 50%;
-    border-color: #ECD610;
-}
-
-.check_belongings:hover{
-    background: #ECD610;
-}
-
-.check_belongings:active{
-    background: #FFF1AB;
 }

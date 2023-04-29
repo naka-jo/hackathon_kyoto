@@ -8,7 +8,11 @@
     </head>
     <body>
         <div class="top_box"></div>
-        <button class="back" type="submit" name="back" >Home</button>
+        <div class="move">
+            <button class="back" type="submit" name="back" >Home</button>
+            <button class="viewtask" type="submit" name="viewtask" >タスク<br>一覧画面へ</button>
+        </div>
+        
         <h1>設定画面</h1>
         <h2>朝の行動を設定しよう！</h2>
 
@@ -34,7 +38,7 @@
                 <button type="submit" name="update_belong">更新</button>
                 <ol>
                     <li>
-
+                        hogehoge
                         <button type="submit" name="delete_bling">削除</button>
                     </li>
                 </ol>
@@ -62,13 +66,11 @@
                         出発
                     </li>
                     <li>
-                        
+                        hugahuga
                         <button type="submit" name="delete_todo">削除</button>
                     </li>
                 </ol>
             </div>
-        </div>
-        <div class="main_lower">
             <div class="traffic">
                 <h3>交通機関を設定</h3>
                 <p>路線名
@@ -100,86 +102,56 @@
                 <p>登録済みの交通機関</p>
                 <ol>
                     <li>
-
+                        hogehoge
                         <button type="submit" name="delete_todo">削除</button>
                     </li>
                 </ol>
             </div>
+        </div>
+        <div class="main_lower">
             <div class="voice">
                 <h3>ガイド音声を選択</h3>
-                <p>四国めたん</p>
-                <audio controls src="./voice_test/四国めたん_test.wav"></audio>
-                <p>ずんだもん</p>
-                <audio controls src="./voice_test/ずんだもん_test.wav"></audio>
-                <p>春日部つむぎ</p>
-                <audio controls src="./voice_test/春日部つむぎ_test.wav"></audio>
-                <p>波音リツ</p>
-                <audio controls src="./voice_test/波音リツ_test.wav"></audio>
-                <p>雨晴はう</p>
-                <audio controls src="./voice_test/雨晴はう_test.wav"></audio>
-                <p>玄野武宏</p>
-                <audio controls src="./voice_test/玄野武宏_test.wav"></audio>
-                <p>白上虎太郎</p>
-                <audio controls src="./voice_test/白上虎太郎_test.wav"></audio>
-                <p>青山龍星</p>
-                <audio controls src="./voice_test/青山龍星_test.wav"></audio>
-                <p>冥鳴ひまり</p>
-                <audio controls src="./voice_test/冥鳴ひまり_test.wav"></audio>
-                <p>九州そら</p>
-                <audio controls src="./voice_test/九州そら_test.wav"></audio>
-                <p>もち子さん</p>
-                <audio controls src="./voice_test/もち子さん_test.wav"></audio>
-                <p>剣崎雌雄</p>
-                <audio controls src="./voice_test/剣崎雌雄_test.wav"></audio>
-                <p>WhiteCUL</p>
-                <audio controls src="./voice_test/WhiteCUL_test.wav"></audio>
-                <p>後鬼</p>
-                <audio controls src="./voice_test/後鬼_test.wav"></audio>
-                <p>No.7</p>
-                <audio controls src="./voice_test/No.7_test.wav"></audio>
-                <p>ちび式じい</p>
-                <audio controls src="./voice_test/ちび式じい_test.wav"></audio>
-                <p>櫻歌ミコ</p>
-                <audio controls src="./voice_test/櫻歌ミコ_test.wav"></audio>
-                <p>小夜-SAYO</p>
-                <audio controls src="./voice_test/小夜-SAYO_test.wav"></audio>
-                <p>ナースロボ_タイプT</p>
-                <audio controls src="./voice_test/ナースロボ_タイプT_test.wav"></audio>
+                <div class="voice_sample">
+                    <div class="voice_1">
+                        <p>春日部つむぎ</p>
+                        <audio controls src="./voice_test/春日部つむぎ_test.wav"></audio>
+                        <p>波音リツ</p>
+                        <audio controls src="./voice_test/波音リツ_test.wav"></audio>
+                    </div>
+                    <div class="voice_2">
+                        <p>白上虎太郎</p>
+                        <audio controls src="./voice_test/白上虎太郎_test.wav"></audio>
+                        <p>ちび式じい</p>
+                        <audio controls src="./voice_test/ちび式じい_test.wav"></audio>
+                    </div>
+                </div>
                 <p>現在の設定: </p>
                 <input type="text" name="inputline" list="voicelist">
                 <button type="submit" name="update_voice">更新</button>
                 <datalist id="voicelist">
-                    <option value="四国めたん">
-                    <option value="ずんだもん">
                     <option value="春日部つむぎ">
                     <option value="波音リツ">
-                    <option value="雨晴はう">
-                    <option value="玄野武宏">
                     <option value="白上虎太郎">
-                    <option value="青山龍星">
-                    <option value="冥鳴ひまり">
-                    <option value="九州そら">
-                    <option value="もち子さん">
-                    <option value="剣崎雌雄">
-                    <option value="WhiteCUL">
-                    <option value="後鬼">
-                    <option value="No.7">
                     <option value="ちび式じい">
-                    <option value="櫻歌ミコ">
-                    <option value="小夜/SAYO">
-                    <option value="ナースロボ＿タイプＴ">
             </div>
 
             <div class="alarm">
                 <h3>アラーム音を選択</h3>
-                <p>アラーム1: リラックス</p>
-                <audio controls src="./alarm/alarm_1.mp3"></audio>
-                <p>アラーム2: パルス系</p>
-                <audio controls src="./alarm/alarm_2.mp3"></audio>
-                <p>アラーム3: チップ</p>
-                <audio controls src="./alarm/alarm_3.mp3"></audio>
-                <p>アラーム4: アルペジオ</p>
-                <audio controls src="./alarm/alarm_4.mp3"></audio>
+                <div class="alarm_sample">
+                    <div class="alarm_1">
+                        <p>アラーム1: リラックス</p>
+                        <audio controls src="./alarm/alarm_1.mp3"></audio>
+                        <p>アラーム2: パルス系</p>
+                        <audio controls src="./alarm/alarm_2.mp3"></audio>
+                    </div>
+                    <div class="alarm_2">
+                        <p>アラーム3: チップ</p>
+                        <audio controls src="./alarm/alarm_3.mp3"></audio>
+                        <p>アラーム4: アルペジオ</p>
+                        <audio controls src="./alarm/alarm_4.mp3"></audio>
+                    </div>
+                </div>
+                <p>現在の設定</p>
                 <input type="text" name="inputline" list="alarmlist">
                 <button type="submit" name="update_voice">更新</button>
                 <datalist id="alarmlist">
