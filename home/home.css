@@ -1,0 +1,69 @@
+body{ 
+    font-family: 'Noto Sans JP';
+    font-size: 18px;
+    margin: 0;
+}
+
+.title{
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    top: 0px;
+    background: #0BB0E2;
+}
+
+.Dora img{
+	width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn1 {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 300px;
+    margin:0 auto;
+	margin-bottom: 20px;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #27acd9;
+	color: #27acd9;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+.btn1:hover {
+	color: #fff;
+	background: #27acd9;
+}
+
+.btn1:active{
+    color: #27acd9;
+    background: lightcyan;
+}
+
+.btn2 {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 300px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border: 2px solid #27acd9;
+	color: #27acd9;
+	border-radius: 100vh;
+	transition: 0.5s;
+}
+.btn2:hover {
+	color: #fff;
+	background: #27acd9;
+}
+
+.btn2:active{
+    color: #27acd9;
+    background: lightcyan;
+}
